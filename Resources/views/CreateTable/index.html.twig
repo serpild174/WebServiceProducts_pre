@@ -1,0 +1,40 @@
+{# src/Acme/Bundles/CustomThemeBundle/Resources/views/CreateTable/index.html.twig #}
+
+{% extends "OroUIBundle:actions:index.html.twig" %}
+
+
+{% block content %}
+     <h1 style="margin-left:25px;">{{ name }}!</h1>
+
+     {% block navButtons %}
+    {% import 'OroUIBundle::macros.html.twig' as UI %}
+    <div class="btn-group" style="margin-left:25px;">
+        {{ UI.addButton({
+            'path': path('sync_products_que'),
+            'label': 'Sync',
+        }) }}
+        {{ UI.addButton({
+            'path': path('sync_products_response'),
+            'label': 'Web Service',
+        }) }}
+        {{ UI.addButton({
+            'path': path('sync_products_random_query'),
+            'label': 'Rand Sku',
+        }) }}
+        {{ UI.addButton({
+            'path': path('sync_products_contoller'),
+            'label': 'Service Controls',
+        }) }}
+        {{ UI.addButton({
+            'path': path('sync_products_que_2'),
+            'label': 'Update',
+        }) }}
+    </div>
+{% endblock %}
+
+{% endblock content %}
+
+
+
+
+

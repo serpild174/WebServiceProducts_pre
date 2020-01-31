@@ -1,0 +1,20 @@
+navigation:
+    menu_config:
+        items:
+            sync_products_tab:
+                label: 'Sync Products'
+                uri:   '#'
+                position: 300
+                    
+            sync_products_tab_link:
+                label: 'Sync Products'
+                route: 'sync_products_link'
+        tree:
+            application_menu:
+                children:
+                    sync_products_tab:
+                        children:
+                            sync_products_tab_link: ~
+
+    titles:
+        sync_products_link: Sync

@@ -1,0 +1,4 @@
+services:
+    WebServiceProducts\Command\CustomProductCreateUpdateCommand:
+        tags:
+            - { name: 'console.command', command: 'oro:custom-product-createupdate' }

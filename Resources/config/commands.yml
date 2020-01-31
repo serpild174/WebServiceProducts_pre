@@ -1,0 +1,5 @@
+services:
+    WebServiceProducts\Command\CustomProductCreateUpdateCommand:
+        autowire: true
+        tags:
+            - { name: console.command }
